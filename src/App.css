@@ -1,5 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
+  padding-top: 50px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .App-logo {
