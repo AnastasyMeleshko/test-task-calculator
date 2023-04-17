@@ -1,8 +1,8 @@
-import ControlPanelStyles from "./ControlPanelStyles.css";
+import {StyledControlPanel} from "./styled";
 
 const ControlPanel = () => {
     return (
-      <div>ControlPanel</div>
+      <StyledControlPanel>ControlPanel</StyledControlPanel>
     )
 }
 

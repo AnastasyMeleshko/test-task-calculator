@@ -1,8 +1,8 @@
-import DisplayStyles from "./DisplayStyles.css";
+import { StyledDisplay } from './styled.js';
 
 const Display = () => {
     return (
-      <div>Display</div>
+      <StyledDisplay>Display</StyledDisplay>
     )
 }
 

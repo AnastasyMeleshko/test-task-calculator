@@ -1,16 +1,16 @@
-import HeaderStyles from "./HeaderStyles.css";
+import {StyledHeader, StyledLogo, NavigationItems, NavigationItem, NavigationLink} from "./styled";
 
 const Header = () => {
     return (
-        <header className='Header'>
-            <p className='logo'>Calculator App</p>
+        <StyledHeader className='Header'>
+            <StyledLogo className='logo'>Calculator App</StyledLogo>
             <nav className='navigation'>
-                <ul className='navigation__items'>
-                    <li className='navigation__item'><a href="#" className='navigation__link'>Home</a></li>
-                    <li className='navigation__item'><a href="#" className='navigation__link'>Settings</a></li>
-                </ul>
+                <NavigationItems className='navigation__items'>
+                    <NavigationItem className='navigation__item'><NavigationLink href="#" className='navigation__link'>Home</NavigationLink></NavigationItem>
+                    <NavigationItem className='navigation__item'><NavigationLink href="#" className='navigation__link'>Settings</NavigationLink></NavigationItem>
+                </NavigationItems>
             </nav>
-        </header>
+        </StyledHeader>
     )
 }
 
