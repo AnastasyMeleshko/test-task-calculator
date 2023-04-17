@@ -1,6 +1,8 @@
+import {StyledKeyPad} from "./styled";
+
 const Keypad = () => {
     return (
-      <div>Keypad</div>
+      <StyledKeyPad>Keypad</StyledKeyPad>
     )
 }
 

@@ -2,20 +2,22 @@ import Display from "./Display/Display";
 import Keypad from "./Keypad/Keypad";
 import History from "./History/History";
 import ControlPanel from "./ControlPanel/ControlPanel";
-import {StyledFirstColumn, StyledWrapper, StyledSecondColumn} from "./styled";
+import {StyledWrapper} from "./styled";
+import {useState} from "react";
 
 const Calculator = () => {
+
+    const [isHistoryShown, setIsHistoryShown] = useState(false);
+
     return (
-      <StyledWrapper>
-          <StyledFirstColumn>
-              <Display/>
-              <Keypad/>
-          </StyledFirstColumn>
-          <StyledSecondColumn>
-              <ControlPanel/>
-              <History/>
-          </StyledSecondColumn>
-      </StyledWrapper>
+        <StyledWrapper>
+            <Display/>
+            <ControlPanel isHistoryShown={isHistoryShown} setIsHistoryShown={setIsHistoryShown}/>
+            <Keypad/>
+            {
+                isHistoryShown ? <History/> : ""
+            }
+        </StyledWrapper>
     )
 }
 

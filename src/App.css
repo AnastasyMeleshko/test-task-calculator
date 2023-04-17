@@ -15,9 +15,8 @@ a {
 
 .App {
   text-align: center;
-  padding-top: 50px;
   max-width: 900px;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 100px auto 0;
+  box-shadow: 1px -1px 20px rgba(0,0,0,0.15);
 }
 
