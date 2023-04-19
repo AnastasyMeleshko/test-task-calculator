@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   align-items: flex-end;
   background-color: #363638;
   font-size: 16px;
-  padding: 20px 30px;
+  padding: 10px 30px;
 `;
 
 export const StyledLogo = styled.p`

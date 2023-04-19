@@ -5,17 +5,17 @@ import ControlPanel from "./ControlPanel/ControlPanel";
 import {StyledWrapper} from "./styled";
 import {useState} from "react";
 
-const Calculator = () => {
+const Calculator = ({currentOperand, operation, previousOperand, dispatch}) => {
 
     const [isHistoryShown, setIsHistoryShown] = useState(false);
 
     return (
         <StyledWrapper>
-            <Display/>
+            <Display currentOperand={currentOperand}/>
             <ControlPanel isHistoryShown={isHistoryShown} setIsHistoryShown={setIsHistoryShown}/>
-            <Keypad/>
+            <Keypad dispatch={dispatch}/>
             {
-                isHistoryShown ? <History/> : ""
+                isHistoryShown ? <History previousOperand={previousOperand} operation={operation} currentOperand={currentOperand}/> : ""
             }
         </StyledWrapper>
     )

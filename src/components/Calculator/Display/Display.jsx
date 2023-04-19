@@ -1,8 +1,12 @@
-import { StyledDisplay } from './styled.js';
+import { StyledDisplay, StyledCurrentOperand } from './styled.js';
 
 const Display = () => {
     return (
-      <StyledDisplay>Display</StyledDisplay>
+      <StyledDisplay>
+          <StyledCurrentOperand>
+            display
+          </StyledCurrentOperand>
+      </StyledDisplay>
     )
 }
 

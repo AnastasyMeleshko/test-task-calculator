@@ -19,6 +19,7 @@ export const StyledControllerWrapper = styled.div`
 
 export const StyledShowHistoryLabel = styled.p`
   font-size: 1.2rem;
+  margin: 0;
 `;
 
 export const ShowHistorySwitcher = styled.label`

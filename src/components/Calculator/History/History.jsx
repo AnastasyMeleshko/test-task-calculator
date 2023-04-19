@@ -1,6 +1,10 @@
+import {StyledPreviousOperand, StyledHistory} from "./styled.js";
+
 const History = () => {
     return (
-      <div>History</div>
+      <StyledHistory>
+          <StyledPreviousOperand>History</StyledPreviousOperand>
+      </StyledHistory>
     )
 }
 
